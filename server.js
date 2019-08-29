@@ -22,6 +22,7 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
+// DEVLOG
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
 }
