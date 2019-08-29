@@ -1,0 +1,15 @@
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: 700px) {
+    margin: 0;
+    width: 40%;
+  }
+}

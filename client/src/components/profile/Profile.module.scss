@@ -1,0 +1,94 @@
+.container {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  max-width: 700px;
+  margin: 1rem auto;
+  padding: 2rem 1.5rem;
+  border-radius: 20px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  display: block;
+  text-align: center;
+
+  .gamertag {
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 0.3rem 0.5rem;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .platformAvatar {
+    display: none;
+  }
+}
+
+a {
+  display: inline-block;
+  margin-top: 2rem;
+  border: #fff 2px solid;
+  padding: 0.5rem 0.8rem;
+  &:hover {
+    border: #ccc 2px solid;
+    color: #ccc;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+li {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  margin-bottom: 0.7rem;
+  border-radius: 10px;
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  span {
+    font-size: 1rem;
+    color: #ccc;
+  }
+}
+
+.activeLegend p {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 500px) {
+  h1 {
+    font-size: 2rem;
+    display: flex;
+    text-align: left;
+
+    .platformAvatar {
+      display: block;
+      width: 54px;
+      margin: 0 0.7rem 0 0;
+    }
+  }
+
+  .grid {
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  li {
+    p {
+      font-size: 2rem;
+    }
+  }
+}

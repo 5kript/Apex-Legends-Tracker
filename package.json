@@ -1,0 +1,20 @@
+{
+  "name": "apex-tracker",
+  "version": "0.0.1",
+  "description": "Track stats for Apex Legends",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server"
+  },
+  "proxy": "http://localhost:80",
+  "author": "Jonas Laurens",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "concurrently": "^4.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "node-fetch": "^2.6.0"
+  }
+}
