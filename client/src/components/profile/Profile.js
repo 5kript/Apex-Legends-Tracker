@@ -10,7 +10,6 @@ import Spinner from '../spinner/Spinner';
 const Profile = () => {
   const { profile, errors } = useContext(ApexContext);
 
-  const [content, setContent] = useState(false);
   const [profileData, setProfileData] = useState();
   const [errorMsg, setErrorMsg] = useState();
 
